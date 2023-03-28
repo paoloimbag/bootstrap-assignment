@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@3.0.0/reset.min.css" /> <!-- CSS Reset -->
+
+	<!--Google Fonts-->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+
+	<!--Font Awesome-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!--Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--Bootstrap JS-->
+	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"> <!-- Style-->
+	<title>Bootstrap</title>
+</head>
+<body>
+	<div class="container-fluid main-container p-0 m-0 row">
+			<nav class="col-lg-2 col-md-3 col-sm-12 p-0" id="nav">
+				<ul class="flex-column d-flex"> <!--Nav-->
+					<li class="logo mx-0"><img src="/assets/img/logo.svg" alt="Dashboard Logo"></li>
+					<li class="selected"><a href="#"><i class="fa-sharp fa-solid fa-chart-pie"></i>Overview</a></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-ticket"></i>Tickets</a></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-lightbulb"></i></i>Ideas</a></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-users"></i>Contacts</a></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-user"></i>Agents</a></li>
+					<li class="divider"></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-gear"></i>Settings</a></li>
+					<li><a href="#"><i class="fa-sharp fa-solid fa-award"></i>Subscriptions</a></li>
+					<li class="divider"></li>
+					<li><a href="#" class="close" onclick="openMenu()"><i class="fa-solid fa-xmark"></i></i>Close</a></li>
+				</ul>
+			</nav>
+			<main class="col-lg-10 col-md-9 col-sm-12">
+				<div class="container-fluid row">
+					<header class="d-flex flex-md-row top-bar"><!--Header-->
+						<img src="/assets/img/logo-icon.svg" class="logo-mobile" alt="Dashboard Logo">
+						<h4 class="flex-fill">Overview</h4>
+						<div class="utility align-items-right">
+							<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+							<i class="fa-sharp fa-solid fa-bell"></i>
+						</div> 
+						<p class="name">Pao Imbag</p>
+						<img class="profile-photo" src="/assets/img/profile-photo.jpeg">
+
+						<div class="align-items-right toggle-menu">
+							<a onclick="openMenu()"><i class="fa-sharp fa-solid fa-bars" ></i></a>
+						</div>
+						
+					</header>
+					<section class="jumbotron p-4"> <!--Jumbotron-->
+						<h1 class="display-4">Hello Pao!</h1>
+						<p class="lead">Welcome to your dashboard, your go-to dashboard for managing your support tickets! We're thrilled to have you on board and can't wait to help you provide your customers with the best possible service.
+
+						</p>
+						<hr class="my-4">
+						<p>So, let's get started and provide your customers with the exceptional support they deserve!</p>
+						<p class="lead">
+							<button type="button" class="btn-lg btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+								Read Modal Message
+							  </button>
+						</p>
+
+						<!-- The Modal -->
+						<div class="modal fade" id="myModal">
+							<div class="modal-dialog">
+							<div class="modal-content">
+						
+								<!-- Modal Header -->
+								<div class="modal-header">
+								<h4 class="modal-title">The World of Web Development</h4>
+								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+								</div>
+						
+								<!-- Modal body -->
+								<div class="modal-body">
+									<p>
+										Web development, a world of creation,
+										A place where ideas turn into manifestation.
+										HTML, CSS, JavaScript in motion,
+										A blend of art and technology in motion.
+									</p>
+									
+									<p>
+										From design to code, the process is grand,
+										Crafting the web with a skilled hand.
+										Creating websites, apps, and more,
+										A world of possibilities, an open door.
+									</p>
+									
+									<p>
+										With each line of code, a page takes shape,
+										A world of creativity, no limits to escape.
+										Web development, a place to express,
+										A world of innovation, we always progress.	
+									</p>
+								</div>
+						
+								<!-- Modal footer -->
+								<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+								</div>
+						
+							</div>
+							</div>
+						</div>
+					</section>
+					<section class="stats d-flex row flex-md-nowrap"><!--Stat-->
+						<div class="col-md-3 col-sm-12 stat-block flex-fill ">
+							<p class="stat-name">Unresolved</p>
+							<p class="stat-score">60</p>
+						</div>
+
+						<div class="col-md-3 col-sm-12 stat-block stat-selected flex-fill">
+							<p class="stat-name">Overdue</p>
+							<p class="stat-score">16</p>
+						</div>
+
+						<div class="col-md-3 col-sm-12 stat-block flex-fill">
+							<p class="stat-name">Open</p>
+							<p class="stat-score">43</p>
+						</div>
+
+						<div class="col-md-3 col-sm-12 stat-block flex-fill">
+							<p class="stat-name">On Hold</p>
+							<p class="stat-score">64</p>
+						</div>
+
+					</section>
+				</div>
+
+				
+				<section class="flex-md-row d-flex chart p-0">
+					<div class="col-md-7 col-sm-12 col-xs-12 p-4 flex-fill"><!--Graph-->
+						<p>Today's Trend</p>
+						<div class="legends d-flex">
+							<p class="date flex-fill">as of 25 May 2019, 09:41 PM</p>
+							<p class="legend-name">
+								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1H17" stroke="#3751FF" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+								Today
+							</p>
+							<p class="legend-name">
+								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 1H17" stroke="#DFE0EB" stroke-width="2" stroke-linecap="round"/>
+								</svg>
+								Yesterday
+							</p>
+						</div>
+						<img src="/assets/img/full-graph.svg" width="100%">
+					</div>
+
+					<div class="col-md-5  col-sm-12 col-xs-12 additional-info flex-fill">
+						<ul class="info-list d-flex flex-column  flex-fill p-0 m-0"> <!--Graph Info-->
+							<li class="info-item flex-fill">
+								<p>Resolved</p>
+								<p>449</p>
+							</li>
+							<li class="info-item flex-fill">
+								<p>Received</p>
+								<p>426</p>
+							</li>
+							<li class="info-item flex-fill"> 
+								<p>Average first response time</p>
+								<p>33m</p>
+							</li>
+							<li class="info-item flex-fill">
+								<p>Average response time</p>
+								<p>3h 8m</p>
+							</li>
+							<li class="info-item flex-fill">
+								<p>Resolution within SLA</p>
+								<p>94%</p>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="flex-md-row d-flex ticket-tasks flex-md-nowrap flex-sm-wrap p-0">
+
+					<div class="col-md-6 col-sm-12 p-4 flex-fill tickets"> <!--Tickets-->
+						<div class="d-flex flex-row align-items-center">
+							<p class="flex-fill">Unresolved tickets</p>
+							<a>View details</a>
+						</div>
+						<p><span>Group:</span> Support</p>
+
+						<ul class="ticket-item flex-column flex-fill m-0 p-0">
+							<li class="d-flex flex-row align-items-center">
+								<p class="flex-fill">Waiting on Feature Request</p>
+								<p>4238</p>
+							</li>
+							<li class="d-flex flex-row align-items-center">
+								<p class="flex-fill">Awaiting Customer Response</p>
+								<p>1005</p>
+							</li>
+							<li class="d-flex flex-row align-items-center">
+								<p class="flex-fill">Awaiting Developer Fix</p>
+								<p>914</p>
+							</li>
+							<li class="d-flex flex-row align-items-center">
+								<p class="flex-fill">Pending</p>
+								<p>281</p>
+							</li>
+						</ul>
+
+					</div>
+
+
+					<div class="col-md-6 col-sm-12 p-4 flex-fill tasks">
+						<div class="d-flex flex-row align-items-center">
+							<p class="flex-fill">Tasks</p><!--Tasks-->
+							<a>View details</a>
+						</div>
+						<p><span>Today</span></p>
+						<form class="task-item flex-column flex-fill m-0 p-0">
+							<fieldset>
+								<input type="checkbox" id="task-1" name="task" value="task-01">
+								<label for="task-1" class="flex-fill">Finish ticket update</label>
+								<p class="urgent">Urgent</p>
+							</fieldset>
+							<fieldset>
+								<input type="checkbox" id="task-2" name="task"  value="task-02">
+								<label for="task-2" class="flex-fill">Create new ticket example</label>
+								<p class="new">New</p>
+							</fieldset>
+							<fieldset>
+								<input type="checkbox" id="task-3" name="task"  value="task-03" checked>
+								<label for="task-3" class="flex-fill">Update ticket report</label>
+								<p class="default">Default</p>
+							</fieldset>
+						</form>
+
+					</div>
+					
+				</section>
+			</main>
+	</div>
+
+	<script src="/assets/js/script.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

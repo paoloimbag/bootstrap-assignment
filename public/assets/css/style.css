@@ -1,0 +1,562 @@
+* {
+  transition: all ease-in-out 0.2s;
+}
+
+html {
+  font-size: 100%;
+} /*16px*/
+body {
+  background: white;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  line-height: 1.75;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  overflow: auto;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+small, .text_small {
+  font-size: 0.8rem;
+}
+
+.main-container {
+  padding-left: 0 !important;
+}
+
+nav {
+  height: 0;
+  background-color: #363740;
+  font-family: "Mulish", sans-serif;
+  color: #9FA2B4;
+  font-size: 16px;
+  padding-right: 0 !important;
+  height: 0px;
+  position: fixed;
+  z-index: 50;
+  display: none;
+  max-width: 100%;
+}
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+nav ul .logo:hover {
+  border: none;
+  padding: 15px 33px;
+}
+nav ul li {
+  padding: 15px 30px 15px 33px;
+}
+nav ul li > a > i {
+  margin-right: 15px;
+  color: #60626E;
+  width: 15px;
+}
+nav ul .selected, nav ul li:hover {
+  background-color: #3E4049;
+  cursor: pointer;
+  border-left: solid 3px #DDE2FF;
+  padding: 15px 30px;
+}
+nav ul .selected a, nav ul .selected a > i, nav ul li:hover a, nav ul li:hover a > i {
+  color: #DDE2FF;
+}
+nav ul .divider, nav ul .divider:hover {
+  height: 2px;
+  background-color: #DFE0EB;
+  padding: 0;
+  margin: 15px auto;
+  opacity: 100%;
+}
+nav ul a {
+  color: #9FA2B4;
+  text-decoration: none;
+}
+nav ul .close {
+  display: block;
+}
+
+main {
+  background-color: #F7F8FC;
+  height: 100vh;
+  overflow-y: auto;
+  align-items: center;
+  padding-bottom: 3rem;
+}
+main header .toggle-menu {
+  display: block;
+  margin-left: 1.5rem;
+  margin-top: 0;
+  font-size: 1.5rem;
+  transform: translate(0, -5px);
+  cursor: pointer;
+}
+main header .utility i {
+  margin-right: 15px;
+}
+main header .logo-mobile {
+  display: block;
+  width: 45px;
+  height: 45px;
+  margin-right: 0.5rem;
+  transform: translate(0, -5px);
+}
+main .stats {
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+main .stats .stat-block {
+  border: solid 2px #DFE0EB;
+  background-color: #FFFFFF;
+  padding: 1rem 1rem 0.5rem;
+  border-radius: 15px;
+  text-align: center;
+}
+main .stats .stat-block:hover, main .stats .stat-selected {
+  border: solid 2px #3751FF;
+  cursor: pointer;
+}
+main .stats .stat-block:hover .stat-name, main .stats .stat-block:hover .stat-score, main .stats .stat-selected .stat-name, main .stats .stat-selected .stat-score {
+  color: #3751FF;
+}
+main .stats .stat-name {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #9FA2B4;
+}
+main .stats .stat-score {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #3E4049;
+}
+main .chart {
+  flex-wrap: wrap;
+  border: solid 2px #DFE0EB;
+  background-color: #FFFFFF;
+  padding: 1.5rem 2rem 3.5rem;
+  border-radius: 15px;
+}
+main .chart p {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #363740;
+}
+main .chart .date, main .chart .legend-name {
+  font-size: 0.875rem;
+  color: #9FA2B4;
+  font-weight: 400;
+}
+main .chart .legend-name {
+  margin-left: 15px;
+  margin-bottom: 50px;
+}
+main .chart .legend-name svg {
+  margin-right: 5px;
+}
+main .chart .graph {
+  width: 100%;
+}
+main .additional-info {
+  flex: wrap;
+}
+main .additional-info .info-list {
+  margin-bottom: 0;
+}
+main .additional-info .info-list .info-item {
+  border-bottom: solid 2px #DFE0EB;
+  border-left: none;
+  padding: 2rem 0 0;
+  text-align: center;
+}
+main .additional-info .info-list .info-item p:first-child {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #9FA2B4;
+  margin-bottom: 5px;
+}
+main .additional-info .info-list .info-item p {
+  font-size: 2rem;
+  font-weight: 700;
+}
+main .additional-info .info-list .info-item:last-child {
+  border-bottom: none;
+}
+main .top-bar, main .stats, main .chart, main .ticket-tasks {
+  margin: 3rem 1rem 1.38rem;
+}
+main .utility i {
+  margin-right: 25px;
+  color: #363740;
+}
+main header .profile-photo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-left: 15px;
+  transform: translate(0, -5px);
+}
+main header .name {
+  display: none;
+  font-size: 0.875rem;
+  color: #363740;
+}
+main .ticket-tasks {
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+main .ticket-tasks .tickets, main .ticket-tasks .tasks {
+  border: solid 2px #DFE0EB;
+  background-color: #FFFFFF;
+  padding: 1.5rem 1.5rem 0.5rem;
+  border-radius: 15px;
+}
+main .ticket-tasks .tickets p:first-child, main .ticket-tasks .tasks p:first-child {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #363740;
+}
+main .ticket-tasks .tickets a, main .ticket-tasks .tasks a {
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: #3751FF;
+  text-decoration: none;
+  position: relative;
+  text-align: right;
+}
+main .ticket-tasks .tickets a:hover, main .ticket-tasks .tasks a:hover {
+  cursor: pointer;
+  color: #3751FF;
+  text-decoration: underline;
+}
+main .ticket-tasks .tickets p > span, main .ticket-tasks .tasks p > span {
+  color: #9FA2B4;
+}
+main .ticket-tasks .tickets .ticket-item, main .ticket-tasks .tickets .task-item, main .ticket-tasks .tasks .ticket-item, main .ticket-tasks .tasks .task-item {
+  padding: 0;
+  margin-top: 2rem;
+}
+main .ticket-tasks .tickets .ticket-item li, main .ticket-tasks .tickets .task-item li, main .ticket-tasks .tasks .ticket-item li, main .ticket-tasks .tasks .task-item li {
+  border-bottom: solid 1px #363740;
+  margin: 30px 0 -5px;
+}
+main .ticket-tasks .tickets .ticket-item li:last-child, main .ticket-tasks .tickets .task-item li:last-child, main .ticket-tasks .tasks .ticket-item li:last-child, main .ticket-tasks .tasks .task-item li:last-child {
+  border: none;
+}
+main .ticket-tasks .tickets .ticket-item p, main .ticket-tasks .tasks .ticket-item p {
+  font-size: 0.875rem;
+  font-weight: 400;
+}
+main .ticket-tasks .tickets .ticket-item p:last-child, main .ticket-tasks .tasks .ticket-item p:last-child {
+  color: #9FA2B4;
+}
+main .ticket-tasks .tickets .task-item li:first-child > p:first-child, main .ticket-tasks .tasks .task-item li:first-child > p:first-child {
+  font-weight: 400;
+  color: #9FA2B4;
+}
+main .ticket-tasks .tasks input[type=checkbox] {
+  border-radius: 50%;
+  width: 2rem;
+  height: 2rem;
+  margin-right: 1.5rem;
+}
+main .ticket-tasks .tasks fieldset {
+  vertical-align: middle;
+  margin-bottom: 1rem;
+  display: flex;
+}
+main .ticket-tasks .tasks fieldset label {
+  font-size: 1.18rem;
+  font-weight: 800;
+  color: #363740;
+}
+main .ticket-tasks .tasks fieldset p {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+main .ticket-tasks .tasks fieldset p.urgent {
+  background-color: #FEC400;
+}
+main .ticket-tasks .tasks fieldset p.new {
+  background-color: #29CC97;
+}
+main .ticket-tasks .tasks fieldset p.default {
+  background-color: #DDE2FF;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    overflow-y: hidden;
+  }
+  nav {
+    background-color: #363740;
+    height: 100vh;
+    font-family: "Mulish", sans-serif;
+    color: #9FA2B4;
+    font-size: 16px;
+    padding-right: 0 !important;
+    display: block;
+    position: relative;
+  }
+  nav ul {
+    padding: 0;
+    margin: 0;
+  }
+  nav ul .logo {
+    margin: 30px auto;
+  }
+  nav ul .logo:hover {
+    border: none;
+    padding: 15px 33px;
+  }
+  nav ul li {
+    padding: 15px 30px 15px 33px;
+  }
+  nav ul li > a > i {
+    margin-right: 15px;
+    color: #60626E;
+    width: 15px;
+  }
+  nav ul .selected, nav ul li:hover {
+    background-color: #3E4049;
+    cursor: pointer;
+    border-left: solid 3px #DDE2FF;
+    padding: 15px 30px;
+  }
+  nav ul .selected a, nav ul .selected a > i, nav ul li:hover a, nav ul li:hover a > i {
+    color: #DDE2FF;
+  }
+  nav ul .divider, nav ul .divider:hover {
+    height: 2px;
+    background-color: #DFE0EB;
+    padding: 0;
+    margin: 15px auto;
+    opacity: 100%;
+  }
+  nav ul a {
+    color: #9FA2B4;
+    text-decoration: none;
+  }
+  nav ul .close {
+    display: none;
+  }
+  main {
+    background-color: #F7F8FC;
+    height: 100vh;
+    overflow-y: scroll;
+    align-items: center;
+    padding-bottom: 3rem;
+  }
+  main header .top-bar, main header .stats, main header .chart, main header .ticket-tasks {
+    margin: 3rem 1rem 1.38rem;
+  }
+  main header .utility i {
+    margin-right: 25px;
+    color: #363740;
+  }
+  main header .profile-photo {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-left: 15px;
+    transform: translate(0, -5px);
+  }
+  main header .name {
+    font-size: 0.875rem;
+    color: #363740;
+    display: block;
+  }
+  main header .toggle-menu, main header .logo-mobile {
+    display: none;
+  }
+  main .stats {
+    column-gap: 2rem;
+  }
+  main .stats .stat-block {
+    border: solid 2px #DFE0EB;
+    background-color: #FFFFFF;
+    padding: 1.5rem 1.5rem 0.5rem;
+    border-radius: 15px;
+    text-align: center;
+  }
+  main .stats .stat-block:hover, main .stats .stat-selected {
+    border: solid 2px #3751FF;
+    cursor: pointer;
+  }
+  main .stats .stat-block:hover .stat-name, main .stats .stat-block:hover .stat-score, main .stats .stat-selected .stat-name, main .stats .stat-selected .stat-score {
+    color: #3751FF;
+  }
+  main .stats .stat-name {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #9FA2B4;
+  }
+  main .stats .stat-score {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #3E4049;
+  }
+  main .chart {
+    border: solid 2px #DFE0EB;
+    background-color: #FFFFFF;
+    padding: 1.5rem 2rem 3.5rem;
+    border-radius: 15px;
+  }
+  main .chart p {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #363740;
+  }
+  main .chart .date, main .chart .legend-name {
+    font-size: 0.875rem;
+    color: #9FA2B4;
+    font-weight: 400;
+  }
+  main .chart .legend-name {
+    margin-left: 15px;
+    margin-bottom: 50px;
+  }
+  main .chart .legend-name svg {
+    margin-right: 5px;
+  }
+  main .chart .graph {
+    width: 100%;
+  }
+  main .additional-info .info-list {
+    margin-bottom: 0;
+    height: 100%;
+  }
+  main .additional-info .info-list .info-item {
+    border-bottom: solid 2px #DFE0EB;
+    border-left: solid 2px #DFE0EB;
+    padding: 2rem 0 0;
+    text-align: center;
+  }
+  main .additional-info .info-list .info-item p:first-child {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #9FA2B4;
+    margin-bottom: 5px;
+  }
+  main .additional-info .info-list .info-item p {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  main .additional-info .info-list .info-item:last-child {
+    border-bottom: none;
+  }
+  main .ticket-tasks {
+    gap: 2rem;
+  }
+  main .ticket-tasks .tickets, main .ticket-tasks .tasks {
+    border: solid 2px #DFE0EB;
+    background-color: #FFFFFF;
+    padding: 1.5rem 1.5rem 0.5rem;
+    border-radius: 15px;
+  }
+  main .ticket-tasks .tickets p:first-child, main .ticket-tasks .tasks p:first-child {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #363740;
+  }
+  main .ticket-tasks .tickets a, main .ticket-tasks .tasks a {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: #3751FF;
+    text-decoration: none;
+    position: relative;
+    text-align: right;
+  }
+  main .ticket-tasks .tickets a:hover, main .ticket-tasks .tasks a:hover {
+    cursor: pointer;
+    color: #3751FF;
+    text-decoration: underline;
+  }
+  main .ticket-tasks .tickets p > span, main .ticket-tasks .tasks p > span {
+    color: #9FA2B4;
+  }
+  main .ticket-tasks .tickets .ticket-item, main .ticket-tasks .tickets .task-item, main .ticket-tasks .tasks .ticket-item, main .ticket-tasks .tasks .task-item {
+    padding: 0;
+    margin-top: 2rem;
+  }
+  main .ticket-tasks .tickets .ticket-item li, main .ticket-tasks .tickets .task-item li, main .ticket-tasks .tasks .ticket-item li, main .ticket-tasks .tasks .task-item li {
+    border-bottom: solid 1px #363740;
+    margin: 30px 0 -5px;
+  }
+  main .ticket-tasks .tickets .ticket-item li:last-child, main .ticket-tasks .tickets .task-item li:last-child, main .ticket-tasks .tasks .ticket-item li:last-child, main .ticket-tasks .tasks .task-item li:last-child {
+    border: none;
+  }
+  main .ticket-tasks .tickets .ticket-item p, main .ticket-tasks .tasks .ticket-item p {
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+  main .ticket-tasks .tickets .ticket-item p:last-child, main .ticket-tasks .tasks .ticket-item p:last-child {
+    color: #9FA2B4;
+  }
+  main .ticket-tasks .tickets .task-item li:first-child > p:first-child, main .ticket-tasks .tasks .task-item li:first-child > p:first-child {
+    font-weight: 400;
+    color: #9FA2B4;
+  }
+  main .ticket-tasks .tasks input[type=checkbox] {
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1.5rem;
+  }
+  main .ticket-tasks .tasks fieldset {
+    vertical-align: middle;
+    margin-bottom: 1rem;
+    display: flex;
+  }
+  main .ticket-tasks .tasks fieldset label {
+    font-size: 1.18rem;
+    font-weight: 800;
+    color: #363740;
+  }
+  main .ticket-tasks .tasks fieldset p {
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  main .ticket-tasks .tasks fieldset p.urgent {
+    background-color: #FEC400;
+  }
+  main .ticket-tasks .tasks fieldset p.new {
+    background-color: #29CC97;
+  }
+  main .ticket-tasks .tasks fieldset p.default {
+    background-color: #DDE2FF;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
