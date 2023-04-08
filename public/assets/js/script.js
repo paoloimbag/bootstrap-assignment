@@ -85,8 +85,7 @@ function openMenu() {  //Function to open/close the menu on mobile
 
 		//for modal
 		const wordOfWisdom = document.querySelector('.modal-body p');
-		
-
+	
 		// get nav block
 		const navholder = document.querySelector('.mainNav');
 		
@@ -186,12 +185,12 @@ function openMenu() {  //Function to open/close the menu on mobile
 			ticketTrend.appendChild(tickTrendItem);
 		});
 
-	} catch( error ) {
-		console.warn( `Nope: ${error}` );
+	} catch(error) {
+		console.warn(`Nope: ${error}`);
 	}
 }
 
 
-getData( '/assets/data/content.json' );
+getData('/assets/data/content.json');
 
   
