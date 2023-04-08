@@ -1,0 +1,157 @@
+{
+    "siteName": "Paolo Imbag - Bootstrap with JSON",
+    "userInfo": { "fullName":"Pao Imbag", "nickName": "Pao"},
+    "ticketStats": [
+        {"ticketType":"Unresolved","dataValue":60},
+        {"ticketType":"Overdue","dataValue":16},
+        {"ticketType":"Open","dataValue":43},
+        {"ticketType":"On Hold","dataValue":64}
+    ],
+    "dashNav":[
+        {
+            "navName":"Overview",
+            "navLink":"#",
+            "navClass":"selected",
+            "navIcon":"fa-sharp fa-solid fa-chart-pie"
+        },
+        {
+            "navName":"Tickets",
+            "navLink":"#",
+            "navClass":" ",
+            "navIcon":"fa-sharp fa-solid fa-ticket"
+        },
+        {
+            "navName":"Ideas",
+            "navLink":"#",
+            "navClass":" ",
+            "navIcon":"fa-sharp fa-solid fa-lightbulb"
+        },
+        {
+            "navName":"Contacts",
+            "navLink":"#",
+            "navClass":" ",
+            "navIcon":"fa-sharp fa-solid fa-users"
+        },
+        {
+            "navName":"Agents",
+            "navLink":"#",
+            "navClass":" ",
+            "navIcon":"fa-sharp fa-solid fa-user"
+        },
+        {
+            "navName":"",
+            "navLink":" ",
+            "navClass":"divider",
+            "navIcon":""
+        },
+        {
+            "navName":"Settings",
+            "navLink":"#",
+            "navClass":" ",
+            "navIcon":"fa-sharp fa-solid fa-gear"
+        },
+        {
+            "navName":"Subscriptions",
+            "navLink":"#",
+            "navClass":"",
+            "navIcon":"fa-sharp fa-solid fa-award"
+        },
+        {
+            "navName":"",
+            "navLink":"",
+            "navClass":"divider",
+            "navIcon":""
+        },
+        {
+            "navName":"Close",
+            "navLink":"",
+            "navClass":"close",
+            "navIcon":"fa-solid fa-xmark"
+        }
+    ],
+
+    "unresolvedTickets":[
+        {
+            "ticketStatus":"Watinging On Feature Request",
+            "ticketNumber":4238
+        },
+        {
+            "ticketStatus":"Awaiting Customer Response",
+            "ticketNumber":1005
+        },
+        {
+            "ticketStatus":"Awaiting Developer Fix",
+            "ticketNumber":914
+        },
+        {
+            "ticketStatus":"Pending",
+            "ticketNumber":281
+        }
+    ],
+    "myTasks":[
+        {
+            "taskName":"Finish ticket update",
+            "taskType":"Urgent",
+            "taskID":"task-1",
+            "taskClass":"urgent"
+        },
+        {
+            "taskName":"Create new ticket example",
+            "taskType":"New",
+            "taskID":"task-2",
+            "taskClass":"new"
+        },
+        {
+            "taskName":"Update ticket report",
+            "taskType":"Default",
+            "taskID":"task-3",
+            "taskClass":"default"
+        }
+    ],
+
+    "trendToday":[
+        {
+            "trendName":"Resolved",
+            "trendValue":449
+        },
+        {
+            "trendName":"Received",
+            "trendValue":426
+        },
+        {
+            "trendName":"Average first response time",
+            "trendValue":"33m"
+        },
+        {
+            "trendName":"Average response time",
+            "trendValue":"3h 8m"
+        },
+        {
+            "trendName":"Resolution within SLA",
+            "trendValue":"94%"
+        }
+    ],
+
+    "wow":[
+        "<b>Keep it simple:</b> The simplest solution is often the best one. Don't overcomplicate things.",
+        "<b>Learn to troubleshoot:</b> Debugging is a crucial skill for any web developer. Learn to identify and fix problems quickly.",
+        "<b>Stay current:</b> Technology is constantly evolving. Stay up to date with the latest trends and techniques.",
+        "<b>Test everything:</b> Before you launch a website, test it thoroughly to ensure it's functional and user-friendly.",
+        "<b>Collaborate with others:</b> Working with other developers and designers can lead to better results and new ideas.",
+        "<b>Practice good coding habits:</b> Write clean, organized code that's easy to read and maintain.",
+        "<b>Be patient:</b> Developing a website takes time and patience. Don't rush the process.",
+        "<b>Listen to feedback:</b> Listen to feedback from users and clients to improve your website's functionality and design.",
+        "<b>Take breaks:</b> Avoid burnout by taking breaks and stepping away from your computer when necessary.",
+        "<b>Have fun:</b> Web development can be challenging, but it can also be rewarding and fun. Enjoy the process and take pride in your work.",
+        "<b>Plan and document:</b> Before you start coding, plan out your website and document your approach. This will help you stay organized and focused.",
+        "<b>Use version control:</b> Version control systems like Git can help you keep track of changes and collaborate with others.",
+        "<b>Be adaptable:</b> Be ready to adapt to changing requirements or new technologies. Flexibility is key in web development.",
+        "<b>Optimize for performance:</b> Optimize your website's performance by minimizing file sizes and reducing load times. This will improve user experience and SEO.",
+        "<b>Don't reinvent the wheel:</b> Don't waste time building features from scratch if there are existing libraries or frameworks that can do the job.",
+        "<b>Focus on user experience:</b> Build websites with the user in mind. Make sure the site is easy to navigate and the content is easy to read.",
+        "<b>Document your code:</b> Document your code so that it's easy for other developers to understand and maintain.",
+        "<b>Learn from your mistakes:</b> Don't be afraid to make mistakes. Use them as opportunities to learn and improve your skills.",
+        "<b>Keep security in mind:</b> Web security is a serious issue. Make sure your website is secure by using best practices and keeping software up to date.",
+        "<b>Take time to refactor:</b> Refactor your code regularly to keep it organized and maintainable. This will save time and reduce bugs in the long run."
+    ]
+}

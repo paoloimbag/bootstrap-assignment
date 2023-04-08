@@ -19,14 +19,14 @@
 	<!--Bootstrap-->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> <!--Bootstrap JS-->
 	<link rel="stylesheet" type="text/css" href="/assets/css/style.css"> <!-- Style-->
-	<title>Paolo Imbag - Bootstrap Assignment</title>
+	<title></title>
 </head>
 <body>
 	<div class="container-fluid main-container p-0 m-0 row">
 			<nav class="col-lg-2 col-md-3 col-sm-12 p-0" id="nav">
-				<ul class="flex-column d-flex"> <!--Nav-->
+				<ul class="flex-column d-flex mainNav"> <!--Nav-->
 					<li class="logo mx-0"><img src="/assets/img/logo.svg" alt="Dashboard Logo"></li>
-					<li class="selected"><a href="#"><i class="fa-sharp fa-solid fa-chart-pie"></i>Overview</a></li>
+					<!-- <li class="selected"><a href="#"><i class="fa-sharp fa-solid fa-chart-pie"></i>Overview</a></li>
 					<li><a href="#"><i class="fa-sharp fa-solid fa-ticket"></i>Tickets</a></li>
 					<li><a href="#"><i class="fa-sharp fa-solid fa-lightbulb"></i></i>Ideas</a></li>
 					<li><a href="#"><i class="fa-sharp fa-solid fa-users"></i>Contacts</a></li>
@@ -35,7 +35,7 @@
 					<li><a href="#"><i class="fa-sharp fa-solid fa-gear"></i>Settings</a></li>
 					<li><a href="#"><i class="fa-sharp fa-solid fa-award"></i>Subscriptions</a></li>
 					<li class="divider"></li>
-					<li><a href="#" class="close" onclick="openMenu()"><i class="fa-solid fa-xmark"></i></i>Close</a></li>
+					<li><a href="#" class="close" onclick="openMenu()"><i class="fa-solid fa-xmark"></i></i>Close</a></li> -->
 				</ul>
 			</nav>
 			<main class="col-lg-10 col-md-9 col-sm-12">
@@ -63,8 +63,8 @@
 						<hr class="my-4">
 						<p>So, let's get started and provide your customers with the exceptional support they deserve!</p>
 						<p class="lead">
-							<button type="button" class="btn-lg btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
-								Read Modal Message
+							<button type="button" class="btn-lg btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" title="Refresh page for a new wow!">
+								Random Dev Tips
 							  </button>
 						</p>
 
@@ -75,13 +75,16 @@
 						
 								<!-- Modal Header -->
 								<div class="modal-header">
-								<h4 class="modal-title">The World of Web Development</h4>
+								<h4 class="modal-title">Your Random Dev Tips</h4>
 								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
 								</div>
 						
 								<!-- Modal body -->
 								<div class="modal-body">
 									<p>
+
+									</p>
+									<!-- <p>
 										Web development, a world of creation,
 										A place where ideas turn into manifestation.
 										HTML, CSS, JavaScript in motion,
@@ -100,7 +103,7 @@
 										A world of creativity, no limits to escape.
 										Web development, a place to express,
 										A world of innovation, we always progress.	
-									</p>
+									</p> -->
 								</div>
 						
 								<!-- Modal footer -->
@@ -113,12 +116,12 @@
 						</div>
 					</section>
 					<section class="stats d-flex row flex-md-nowrap"><!--Stat-->
-						<div class="col-md-3 col-sm-12 stat-block flex-fill ">
+						<!-- <div class="col-md-3 col-sm-12 stat-block flex-fill ">
 							<p class="stat-name">Unresolved</p>
 							<p class="stat-score">60</p>
 						</div>
 
-						<div class="col-md-3 col-sm-12 stat-block stat-selected flex-fill">
+						<div class="col-md-3 col-sm-12 stat-block flex-fill">
 							<p class="stat-name">Overdue</p>
 							<p class="stat-score">16</p>
 						</div>
@@ -131,7 +134,7 @@
 						<div class="col-md-3 col-sm-12 stat-block flex-fill">
 							<p class="stat-name">On Hold</p>
 							<p class="stat-score">64</p>
-						</div>
+						</div> -->
 
 					</section>
 				</div>
@@ -141,7 +144,7 @@
 					<div class="col-md-7 col-sm-12 col-xs-12 p-4 flex-fill"><!--Graph-->
 						<p>Today's Trend</p>
 						<div class="legends d-flex">
-							<p class="date flex-fill">as of 25 May 2019, 09:41 PM</p>
+							<p class="date flex-fill"></p>
 							<p class="legend-name">
 								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
 									<path d="M1 1H17" stroke="#3751FF" stroke-width="2" stroke-linecap="round"/>
@@ -160,7 +163,7 @@
 
 					<div class="col-md-5  col-sm-12 col-xs-12 additional-info flex-fill">
 						<ul class="info-list d-flex flex-column  flex-fill p-0 m-0"> <!--Graph Info-->
-							<li class="info-item flex-fill">
+							<!-- <li class="info-item flex-fill">
 								<p>Resolved</p>
 								<p>449</p>
 							</li>
@@ -179,7 +182,7 @@
 							<li class="info-item flex-fill">
 								<p>Resolution within SLA</p>
 								<p>94%</p>
-							</li>
+							</li> -->
 						</ul>
 					</div>
 				</section>
@@ -194,7 +197,7 @@
 						<p><span>Group:</span> Support</p>
 
 						<ul class="ticket-item flex-column flex-fill m-0 p-0">
-							<li class="d-flex flex-row align-items-center">
+							<!-- <li class="d-flex flex-row align-items-center">
 								<p class="flex-fill">Waiting on Feature Request</p>
 								<p>4238</p>
 							</li>
@@ -209,7 +212,7 @@
 							<li class="d-flex flex-row align-items-center">
 								<p class="flex-fill">Pending</p>
 								<p>281</p>
-							</li>
+							</li> -->
 						</ul>
 
 					</div>
@@ -222,7 +225,7 @@
 						</div>
 						<p><span>Today</span></p>
 						<form class="task-item flex-column flex-fill m-0 p-0">
-							<fieldset>
+							<!-- <fieldset>
 								<input type="checkbox" id="task-1" name="task" value="task-01">
 								<label for="task-1" class="flex-fill">Finish ticket update</label>
 								<p class="urgent">Urgent</p>
@@ -236,7 +239,7 @@
 								<input type="checkbox" id="task-3" name="task"  value="task-03" checked>
 								<label for="task-3" class="flex-fill">Update ticket report</label>
 								<p class="default">Default</p>
-							</fieldset>
+							</fieldset> -->
 						</form>
 
 					</div>

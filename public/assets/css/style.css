@@ -94,11 +94,11 @@ nav ul .selected a, nav ul .selected a > i, nav ul li:hover a, nav ul li:hover a
   color: #DDE2FF;
 }
 nav ul .divider, nav ul .divider:hover {
-  height: 2px;
+  height: 0px;
   background-color: #DFE0EB;
   padding: 0;
   margin: 15px auto;
-  opacity: 100%;
+  opacity: 0%;
 }
 nav ul a {
   color: #9FA2B4;
@@ -358,11 +358,11 @@ main .ticket-tasks .tasks fieldset p.default {
     color: #DDE2FF;
   }
   nav ul .divider, nav ul .divider:hover {
-    height: 2px;
+    height: 0px;
     background-color: #DFE0EB;
     padding: 0;
     margin: 15px auto;
-    opacity: 100%;
+    opacity: 0%;
   }
   nav ul a {
     color: #9FA2B4;
