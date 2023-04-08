@@ -295,6 +295,7 @@ main .ticket-tasks .tasks fieldset {
   vertical-align: middle;
   margin-bottom: 1rem;
   display: flex;
+  transition: all ease-in-out 0.2s;
 }
 main .ticket-tasks .tasks fieldset label {
   font-size: 1.18rem;
@@ -313,6 +314,9 @@ main .ticket-tasks .tasks fieldset p.new {
 }
 main .ticket-tasks .tasks fieldset p.default {
   background-color: #DDE2FF;
+}
+main .ticket-tasks .tasks fieldset p.done {
+  background-color: #3cff00;
 }
 
 @media only screen and (min-width: 768px) {
@@ -516,46 +520,6 @@ main .ticket-tasks .tasks fieldset p.default {
   }
   main .ticket-tasks .tickets .ticket-item li:last-child, main .ticket-tasks .tickets .task-item li:last-child, main .ticket-tasks .tasks .ticket-item li:last-child, main .ticket-tasks .tasks .task-item li:last-child {
     border: none;
-  }
-  main .ticket-tasks .tickets .ticket-item p, main .ticket-tasks .tasks .ticket-item p {
-    font-size: 0.875rem;
-    font-weight: 400;
-  }
-  main .ticket-tasks .tickets .ticket-item p:last-child, main .ticket-tasks .tasks .ticket-item p:last-child {
-    color: #9FA2B4;
-  }
-  main .ticket-tasks .tickets .task-item li:first-child > p:first-child, main .ticket-tasks .tasks .task-item li:first-child > p:first-child {
-    font-weight: 400;
-    color: #9FA2B4;
-  }
-  main .ticket-tasks .tasks input[type=checkbox] {
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
-    margin-right: 1.5rem;
-  }
-  main .ticket-tasks .tasks fieldset {
-    vertical-align: middle;
-    margin-bottom: 1rem;
-    display: flex;
-  }
-  main .ticket-tasks .tasks fieldset label {
-    font-size: 1.18rem;
-    font-weight: 800;
-    color: #363740;
-  }
-  main .ticket-tasks .tasks fieldset p {
-    padding: 5px 10px;
-    border-radius: 5px;
-  }
-  main .ticket-tasks .tasks fieldset p.urgent {
-    background-color: #FEC400;
-  }
-  main .ticket-tasks .tasks fieldset p.new {
-    background-color: #29CC97;
-  }
-  main .ticket-tasks .tasks fieldset p.default {
-    background-color: #DDE2FF;
   }
 }
 

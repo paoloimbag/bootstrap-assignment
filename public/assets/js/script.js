@@ -19,7 +19,7 @@ function openMenu() {  //Function to open/close the menu on mobile
 		//console.log(trigger);
   }
 
-  window.addEventListener("resize", (event) => { //listens to window resize to to be able to reset the trigger boolean. also to prevent the nav to be hidden on desktop
+window.addEventListener("resize", (event) => { //listens to window resize to to be able to reset the trigger boolean. also to prevent the nav to be hidden on desktop
 
 	var browserWidth = window.innerWidth;
 	
@@ -160,18 +160,57 @@ function openMenu() {  //Function to open/close the menu on mobile
 
 		//data for tasks
 
+		
+		var taskCTR = 0;
+		
+
 		data.myTasks.forEach(taskList=>{
 			//console.log(taskList);
 
 			var myTask = document.createElement('fieldset');
+			taskCTR++;
+			console.log(taskCTR);
 
-			myTask.innerHTML = `<input type="checkbox" id="${taskList.taskID}" name="task" value="${taskList.taskID}">
+			myTask.innerHTML = `<input type="checkbox" id="${taskList.taskID}" name="${taskList.taskName}" value="${taskList.taskBool}">
 			<label for="${taskList.taskID}" class="flex-fill">${taskList.taskName}</label>
 			<p class="${taskList.taskClass}">${taskList.taskType}</p>`;
+
+			myTask.addEventListener('click',function() {
+				var checked = document.getElementById(`${taskList.taskID}`);
+				if (checked.checked)
+				{
+					checked.value = true;
+
+					taskCTR--;
+					console.log(taskCTR);
+					if(taskCTR>0)
+					{
+						setTimeout(() => {
+							myTask.style.display="none";
+							myTask.style.opacity=0;
+							myTask.style.transition="all ease-in-out 0.5s";
+						  }, 500);
+						
+					}
+					else
+					{
+						setTimeout(() => {
+							myTask.innerHTML = `<label class="flex-fill">All Done! <a href="index.html">(Refresh Page)</a></label>`;
+						  }, 500);
+						
+					}
+				}
+				else
+				{
+					checked.value = false;
+				}
+
+			})
 
 			myTaskList.appendChild(myTask);
 
 		});
+
 
 		//data for ticket trend
 		data.trendToday.forEach(tickTrend =>{

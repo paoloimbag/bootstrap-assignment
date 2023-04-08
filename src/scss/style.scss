@@ -411,6 +411,7 @@ main
 					vertical-align: middle;
 					margin-bottom: 1rem;
 					display: flex;
+					transition: all ease-in-out 0.2s;
 
 					label
 					{
@@ -438,6 +439,11 @@ main
 					p.default
 					{
 						background-color: #DDE2FF;
+					}
+					
+					p.done
+					{
+						background-color: #3cff00;
 					}
 				}
 			}
@@ -757,72 +763,6 @@ main
 
 				}
 
-				.ticket-item p
-				{
-					font-size: 0.875rem;
-					font-weight: 400;
-				}
-
-				.ticket-item p:last-child
-				{
-					color: #9FA2B4;
-				}
-
-
-				.task-item
-				{
-					li:first-child > p:first-child
-					{
-						font-weight: 400;
-						color: #9FA2B4;
-					}
-				}
-			}
-
-			.tasks
-			{
-				input[type=checkbox]
-				{
-					border-radius: 50%;
-					width: 2rem;
-					height: 2rem;
-					margin-right: 1.5rem;
-				}
-
-				fieldset
-				{
-					vertical-align: middle;
-					margin-bottom: 1rem;
-					display: flex;
-
-					label
-					{
-						font-size: 1.18rem;
-						font-weight: 800;
-						color: #363740;		
-					}
-
-					p
-					{
-						padding: 5px 10px;
-						border-radius: 5px;
-					}
-
-					p.urgent
-					{
-						background-color: #FEC400;
-					}
-
-					p.new
-					{
-						background-color: #29CC97;
-					}
-
-					p.default
-					{
-						background-color: #DDE2FF;
-					}
-				}
 			}
 		}
 	}

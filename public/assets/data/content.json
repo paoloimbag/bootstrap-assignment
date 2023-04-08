@@ -93,19 +93,23 @@
             "taskName":"Finish ticket update",
             "taskType":"Urgent",
             "taskID":"task-1",
-            "taskClass":"urgent"
+            "taskClass":"urgent",
+            "taskBool":false
         },
         {
             "taskName":"Create new ticket example",
             "taskType":"New",
             "taskID":"task-2",
-            "taskClass":"new"
+            "taskClass":"new",
+            "taskBool":false
         },
         {
             "taskName":"Update ticket report",
             "taskType":"Default",
             "taskID":"task-3",
-            "taskClass":"default"
+            "taskClass":"default",
+            "taskBool":false
+            
         }
     ],
 
