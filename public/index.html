@@ -23,137 +23,124 @@
 </head>
 <body>
 	<div class="container-fluid main-container p-0 m-0 row">
-			<nav class="col-lg-2 col-md-3 col-sm-12 p-0" id="nav">
-				<ul class="flex-column d-flex mainNav"> <!--Nav-->
-					<li class="logo mx-0"><img src="/assets/img/logo.svg" alt="Dashboard Logo"></li>
-					<!--Nav List Items added via JS-->
-				</ul>
-			</nav>
-			<main class="col-lg-10 col-md-9 col-sm-12">
-				<div class="container-fluid row">
-					<header class="d-flex flex-md-row top-bar"><!--Header-->
-						<img src="/assets/img/logo-icon.svg" class="logo-mobile" alt="Dashboard Logo">
-						<h4 class="flex-fill">Overview</h4>
-						<div class="utility align-items-right">
-							<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-							<i class="fa-sharp fa-solid fa-bell"></i>
-						</div> 
-						<p class="name">Pao Imbag</p>
-						<img class="profile-photo" src="/assets/img/profile-photo.jpeg">
+		<nav class="col-lg-2 col-md-3 col-sm-12 p-0" id="nav">
+			<ul class="flex-column d-flex mainNav"> <!--Nav-->
+				<li class="logo mx-0"><img src="/assets/img/logo.svg" alt="Dashboard Logo"></li>
+				<!--Nav List Items added via JS-->
+			</ul>
+		</nav>
+		<main class="col-lg-10 col-md-9 col-sm-12">
+			<div class="container-fluid row">
+				<header class="d-flex flex-md-row top-bar"><!--Header-->
+					<img src="/assets/img/logo-icon.svg" class="logo-mobile" alt="Dashboard Logo">
+					<h4 class="flex-fill">Overview</h4>
+					<div class="utility align-items-right">
+						<i class="fa-sharp fa-solid fa-magnifying-glass"></i>
+						<i class="fa-sharp fa-solid fa-bell"></i>
+					</div> 
+					<p class="name">Pao Imbag</p>
+					<img class="profile-photo" src="/assets/img/profile-photo.jpeg">
 
-						<div class="align-items-right toggle-menu">
-							<a onclick="openMenu()"><i class="fa-sharp fa-solid fa-bars" ></i></a>
-						</div>
-						
-					</header>
-					<section class="jumbotron p-4"> <!--Jumbotron-->
-						<h1 class="display-4"><!--Added via JS--></h1>
-						<p class="lead">Welcome to your dashboard, your go-to dashboard for managing your support tickets! We're thrilled to have you on board and can't wait to help you provide your customers with the best possible service.
-
-						</p>
-						<hr class="my-4">
-						<p>So, let's get started and provide your customers with the exceptional support they deserve!</p>
-						<p class="lead">
-							<button type="button" class="btn-lg btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" title="Refresh page for a new wow!">
-								Random Dev Tips
-							  </button>
-						</p>
-
-						<!-- The Modal -->
-						<div class="modal fade" id="myModal">
-							<div class="modal-dialog">
-							<div class="modal-content">
-						
-								<!-- Modal Header -->
-								<div class="modal-header">
-								<h4 class="modal-title">Your Random Dev Tips</h4>
-								<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-								</div>
-						
-								<!-- Modal body -->
-								<div class="modal-body">
-									<p>
-										<!--Random Tip added via JS. Changes on Refresh-->
-									</p>
-								</div>
-						
-								<!-- Modal footer -->
-								<div class="modal-footer">
-								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-								</div>
-						
-							</div>
-							</div>
-						</div>
-					</section>
-					<section class="stats d-flex row flex-md-nowrap"><!--Stat-->
-						<!--Div items added via JS-->
-
-					</section>
-				</div>
-
-				
-				<section class="flex-md-row d-flex chart p-0">
-					<div class="col-md-7 col-sm-12 col-xs-12 p-4 flex-fill"><!--Graph-->
-						<p>Today's Trend</p>
-						<div class="legends d-flex">
-							<p class="date flex-fill"><!--Added via JS--></p>
-							<p class="legend-name">
-								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 1H17" stroke="#3751FF" stroke-width="2" stroke-linecap="round"/>
-								</svg>
-								Today
-							</p>
-							<p class="legend-name">
-								<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path d="M1 1H17" stroke="#DFE0EB" stroke-width="2" stroke-linecap="round"/>
-								</svg>
-								Yesterday
-							</p>
-						</div>
-						<img src="/assets/img/full-graph.svg" width="100%">
-					</div>
-
-					<div class="col-md-5  col-sm-12 col-xs-12 additional-info flex-fill">
-						<ul class="info-list d-flex flex-column  flex-fill p-0 m-0"> <!--Graph Info-->
-							
-							<!--List Items added via JS-->
-						</ul>
-					</div>
-				</section>
-
-				<section class="flex-md-row d-flex ticket-tasks flex-md-nowrap flex-sm-wrap p-0">
-
-					<div class="col-md-6 col-sm-12 p-4 flex-fill tickets"> <!--Tickets-->
-						<div class="d-flex flex-row align-items-center">
-							<p class="flex-fill">Unresolved tickets</p>
-							<a>View details</a>
-						</div>
-						<p><span>Group:</span> Support</p>
-
-						<ul class="ticket-item flex-column flex-fill m-0 p-0">
-							<!--List Items added via JS-->
-						</ul>
-
-					</div>
-
-
-					<div class="col-md-6 col-sm-12 p-4 flex-fill tasks">
-						<div class="d-flex flex-row align-items-center">
-							<p class="flex-fill">Tasks</p><!--Tasks-->
-							<a>View details</a>
-						</div>
-						<p><span>Today</span></p>
-						<form class="task-item flex-column flex-fill m-0 p-0">
-						<!--Fieldset added via JS-->
-						</form>
-
+					<div class="align-items-right toggle-menu">
+						<a id="openMobileMenu"><i class="fa-sharp fa-solid fa-bars" ></i></a>
 					</div>
 					
-				</section>
-			</main>
-	</div>
+				</header>
+				<section class="jumbotron p-4"> <!--Jumbotron-->
+					<h1 class="display-4"><!--Added via JS--></h1>
+					<p class="lead">Welcome to your dashboard, your go-to dashboard for managing your support tickets! We're thrilled to have you on board and can't wait to help you provide your customers with the best possible service.
 
+					</p>
+					<hr class="my-4">
+					<p>So, let's get started and provide your customers with the exceptional support they deserve!</p>
+					<p class="lead">
+						<button type="button" class="btn-lg btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal" title="Refresh page for a new wow!">
+							Random Dev Tips
+						</button>
+					</p>
+
+					<!-- The Modal -->
+					<div class="modal fade" id="myModal">
+						<div class="modal-dialog">
+						<div class="modal-content">
+							<!-- Modal Header -->
+							<div class="modal-header">
+							<h4 class="modal-title">Your Random Dev Tips</h4>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+							</div>
+					
+							<!-- Modal body -->
+							<div class="modal-body">
+								<p>
+								<!--Random Tip added via JS. Changes on Refresh-->
+								</p>
+							</div>
+					
+							<!-- Modal footer -->
+							<div class="modal-footer">
+								<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+							</div>
+						</div>
+						</div>
+					</div>
+				</section>
+				<section class="stats d-flex row flex-md-nowrap"><!--Stat-->
+					<!--Div items added via JS-->
+				</section>
+			</div>
+			
+			<section class="flex-md-row d-flex chart p-0">
+				<div class="col-md-7 col-sm-12 col-xs-12 p-4 flex-fill"><!--Graph-->
+					<p>Today's Trend</p>
+					<div class="legends d-flex">
+						<p class="date flex-fill"><!--Added via JS--></p>
+						<p class="legend-name">
+							<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1H17" stroke="#3751FF" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+							Today
+						</p>
+						<p class="legend-name">
+							<svg width="18" height="2" viewBox="0 0 18 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 1H17" stroke="#DFE0EB" stroke-width="2" stroke-linecap="round"/>
+							</svg>
+							Yesterday
+						</p>
+					</div>
+					<img src="/assets/img/full-graph.svg" width="100%">
+				</div>
+				<div class="col-md-5  col-sm-12 col-xs-12 additional-info flex-fill">
+					<ul class="info-list d-flex flex-column  flex-fill p-0 m-0"> <!--Graph Info-->
+						<!--List Items added via JS-->
+					</ul>
+				</div>
+			</section>
+
+			<section class="flex-md-row d-flex ticket-tasks flex-md-nowrap flex-sm-wrap p-0">
+				<div class="col-md-6 col-sm-12 p-4 flex-fill tickets"> <!--Tickets-->
+					<div class="d-flex flex-row align-items-center">
+						<p class="flex-fill">Unresolved tickets</p>
+						<a>View details</a>
+					</div>
+					<p><span>Group:</span> Support</p>
+
+					<ul class="ticket-item flex-column flex-fill m-0 p-0">
+						<!--List Items added via JS-->
+					</ul>
+				</div>
+				<div class="col-md-6 col-sm-12 p-4 flex-fill tasks">
+					<div class="d-flex flex-row align-items-center">
+						<p class="flex-fill">Tasks</p><!--Tasks-->
+						<a>View details</a>
+					</div>
+					<p><span>Today</span></p>
+					<form class="task-item flex-column flex-fill m-0 p-0">
+					<!--Fieldset added via JS-->
+					</form>
+				</div>
+			</section>
+		</main>
+	</div>
 	<script src="/assets/js/script.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 </body>

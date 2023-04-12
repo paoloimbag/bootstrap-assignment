@@ -13,7 +13,6 @@ body {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  overflow: auto;
 }
 
 p {
@@ -111,7 +110,6 @@ nav ul .close {
 main {
   background-color: #F7F8FC;
   height: 100vh;
-  overflow-y: auto;
   align-items: center;
   padding-bottom: 3rem;
 }
@@ -320,9 +318,6 @@ main .ticket-tasks .tasks fieldset p.done {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    overflow-y: hidden;
-  }
   nav {
     background-color: #363740;
     height: 100vh;

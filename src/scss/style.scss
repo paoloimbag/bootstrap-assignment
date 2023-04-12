@@ -22,7 +22,7 @@ body {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
-	overflow: auto;
+	//overflow: auto;
 	}
 
 p {margin-bottom: 1rem;}
@@ -129,7 +129,7 @@ main
 
 	background-color: $mainBg;
 	height: 100vh;
-	overflow-y: auto;
+	// overflow-y: auto;
 	align-items: center;
 	padding-bottom: 3rem;
 
@@ -455,10 +455,6 @@ main
 
 @media only screen and (min-width: 768px) { //Desktop
 
-	body
-	{
-		overflow-y: hidden;
-	}
 	
 	nav
 	{

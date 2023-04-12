@@ -1,3 +1,6 @@
+
+document.getElementById("openMobileMenu").addEventListener("click",openMenu); //Open Menu on Mobile
+
 var trigger = false;
 
 function openMenu() {  //Function to open/close the menu on mobile
@@ -15,9 +18,11 @@ function openMenu() {  //Function to open/close the menu on mobile
 			document.getElementById("nav").style.display = "none";
 			trigger=false;
 		}
+				//console.log(trigger);
+}
 
-		//console.log(trigger);
-  }
+
+
 
 window.addEventListener("resize", (event) => { //listens to window resize to to be able to reset the trigger boolean. also to prevent the nav to be hidden on desktop
 
@@ -182,7 +187,7 @@ window.addEventListener("resize", (event) => { //listens to window resize to to 
 					checked.value = true;
 
 					taskCTR--;
-					console.log(taskCTR);
+					//console.log(taskCTR);
 					if(taskCTR>0)
 					{
 						setTimeout(() => {
